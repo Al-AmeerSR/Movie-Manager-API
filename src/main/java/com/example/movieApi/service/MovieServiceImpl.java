@@ -224,8 +224,8 @@ public class MovieServiceImpl implements MovieService{
         }
 
         return new MoviePageResponse(movieDtos,pageNumber,pageSize,
+                                 moviePages.getTotalElements(),
                                  moviePages.getTotalPages(),
-                                 (int) moviePages.getTotalElements(),
                                  moviePages.isLast());
     }
 
@@ -260,8 +260,8 @@ public class MovieServiceImpl implements MovieService{
         }
 
         return new MoviePageResponse(movieDtos,pageNumber,pageSize,
+                moviePages.getTotalElements(),
                 moviePages.getTotalPages(),
-                (int) moviePages.getTotalElements(),
                 moviePages.isLast());
     }
 }
