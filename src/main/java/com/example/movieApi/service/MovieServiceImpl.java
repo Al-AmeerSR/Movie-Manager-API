@@ -164,7 +164,7 @@ public class MovieServiceImpl implements MovieService{
 //        6.generate poster url
         String posterUrl = baseUrl+"/file/"+fileName;
 
-//        7.map to moviedto and return it
+//        7.map to moviedto and return it //hi
 
         MovieDto response = new MovieDto(movie.getMovieId(),
                 movie.getTitle(),
